@@ -6,14 +6,14 @@ const feSpeaker = [
   {
     id: 1,
     title: 'Yochai Brnklrt',
-    img: '../s1.png',
+    img: '../images/aboutimg.png',
     heading: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
     subheading: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
   },
   {
     id: 2,
     title: 'Soh Yeong Noh',
-    img: '../s2.png',
+    img: './s2.png',
     heading: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
     subheading: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
   }];
@@ -22,14 +22,14 @@ const dynobj = [
   {
     id: 1,
     title: 'Faisal Mumtaz',
-    img: '../s1.png',
+    img: './s1.png',
     heading: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
     subheading: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
   },
   {
     id: 2,
     title: 'ABC',
-    img: '../s2.png',
+    img: './s2.png',
     heading: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
     subheading: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
   },
