@@ -6,61 +6,60 @@ body {
 }
 
 h1 {
-    color: hsl(0, 0%, 28%);
-    font-size: 50px;
-    font-weight: bold;
-    font-family: monospace;
-    letter-spacing: 7px;
-    cursor: pointer;
-  }
-  
-h1 span {
-    transition: 0.5s ease-out;
-  }
-  h1:hover span:nth-child(1) {
-    margin-right: 5px;
-  }
-  h1:hover span:nth-child(1):after {
-    content: "'";
-  }
-  h1:hover span:nth-child(2) {
-    margin-left: 30px;
-  }
-  h1:hover span {
-    color: #c7941e;
-    text-shadow: 0 0 10px #c7941e, 0 0 20px #c7941e, 0 0 40px #c7941e;
-  }
-  
-@media only screen and (min-width: 768px) {
+  color: hsl(0, 0%, 28%);
+  font-size: 50px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer;
+}
 
-  .mainb , .desLink{
+h1 span {
+  transition: 0.5s ease-out;
+}
+
+h1:hover span {
+  color: #c7941e;
+  text-shadow: 0 0 10px #c7941e, 0 0 20px #c7941e, 0 0 40px #c7941e;
+}
+
+h1:hover span:nth-child(1) {
+  margin-right: 5px;
+}
+
+h1:hover span:nth-child(1)::after {
+  content: "'";
+}
+
+h1:hover span:nth-child(2) {
+  margin-left: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .mainb,
+  .desLink {
     display: none;
   }
-  
 
- .topHead{
+  .topHead {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    padding: 0px 190px 0px 0px;
+    padding: 0 190px 0 0;
     gap: 20px;
     width: 100%;
     height: 30px;
-    background: #3E3E3E;
-    font-family: 'Lato';
+    background: #3e3e3e;
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
+    color: #fff;
+  }
 
- }
-
-  
- .logo {
+  .logo {
     display: inline;
     padding-left: 80px;
   }
@@ -70,46 +69,34 @@ h1 span {
     display: flex;
     gap: 30px;
   }
-.liItems{
-    font-family: 'Lato';
+
+  .liItems {
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 14px;
     line-height: 17px;
     display: flex;
     align-items: center;
-    
-}
-.mainBtn{
+  }
+
+  .mainBtn {
     margin-left: 30px;
-    border:4px solid orange;
+    border: 4px solid orange;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-}
+  }
 
-.mainBtn{
-    margin-left: 30px;
-    border:4px solid orange;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-
-.ph {
+  .ph {
     width: 732.84px;
     height: 284.64px;
     margin: auto;
     margin-top: -750px;
-
   }
 
-
-  
   .st {
     position: absolute;
     box-sizing: border-box;
@@ -175,6 +162,7 @@ h1 span {
     letter-spacing: -0.07em;
     color: #868686;
   }
+
   .simg {
     width: 100%;
     height: 662px;
@@ -185,23 +173,21 @@ h1 span {
   .mainC {
     display: flex;
     flex-direction: row;
-    width:85%;
+    width: 85%;
     align-items: center;
     justify-content: center;
     margin-top: 10%;
-    margin-right:100px;
+    margin-right: 100px;
   }
 
-
-  .mainR >div {
+  .mainR > div {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 0px;
+    gap: 0;
     width: 200px;
     background: rgba(59, 62, 69, 0.8);
-    
   }
 
   .mainPTxt {
@@ -227,27 +213,27 @@ h1 span {
     letter-spacing: 0.03em;
     color: #fff;
   }
-.desLink{
-  width: 290px;
-  height: 19px;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: -0.01em;
-  text-decoration-line: underline;
-  color: #FFFFFF;
-  margin: auto;
-  margin-top: 8%;
 
-}
+  .desLink {
+    width: 290px;
+    height: 19px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -0.01em;
+    text-decoration-line: underline;
+    color: #fff;
+    margin: auto;
+    margin-top: 8%;
+  }
 
   .sheading {
-    width:200px;
+    width: 200px;
     height: 17px;
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -260,12 +246,14 @@ h1 span {
     letter-spacing: -0.04em;
     color: #fff;
   }
+
   .abInd {
     width: 51px;
     height: 0;
     border: 2px solid #a04038;
     margin: -20px auto;
   }
+
   .fs {
     display: flex;
     flex-direction: column;
@@ -274,7 +262,7 @@ h1 span {
     gap: 20px;
     width: 100%;
     margin: auto;
-    margin-top: 9%;
+    margin-top: 12%;
   }
 
   .fsp {
@@ -351,17 +339,15 @@ h1 span {
     margin-top: 27px;
   }
 
-  .abCont {
-  }
-  .stic{
+  .stic {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 40px;
-    
   }
-  .dynmic{
+
+  .dynmic {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -426,13 +412,10 @@ h1 span {
     z-index: 1;
     position: absolute;
     margin-top: -300px;
-
   }
 
   .abtxt3 {
-   
     width: 100%;
-    margin-top: -20px;
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -494,13 +477,7 @@ h1 span {
     color: #838383;
   }
 
-  .abInd {
-    width: 30px;
-    height: 0;
-    border: 2px solid #a04038;
-  }
-
-  .abtimg1{
+  .abtimg1 {
     width: 542px;
     height: 195.28px;
   }
@@ -523,7 +500,7 @@ h1 span {
     padding-top: 40px;
     gap: 30px;
     width: 100%;
-    height:600px;
+    height: 600px;
     background: #fff;
     border-bottom: 1px solid #fafafa;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -562,10 +539,9 @@ h1 span {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
-
   }
-  .abimg1{
+
+  .abimg1 {
     width: 432px;
     height: 236px;
   }
@@ -582,17 +558,19 @@ h1 span {
     background: #414246;
   }
 
-  .brandCard1{
+  .brandCard1 {
     display: none;
   }
-  .abtFooter{
+
+  .abtFooter {
     width: 100%;
     height: 245px;
-    background: #2E2E2E;
+    background: #2e2e2e;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .brandTxt {
     width: 100%;
     height: 34px;
@@ -611,7 +589,7 @@ h1 span {
   .foottxt {
     width: 338px;
     height: 17px;
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -619,10 +597,11 @@ h1 span {
     display: flex;
     align-items: center;
     letter-spacing: -0.01em;
-    color: #FFFFFF;
+    color: #fff;
   }
-  .Indexfoottxt{
-    font-family: 'Lato';
+
+  .Indexfoottxt {
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -630,39 +609,43 @@ h1 span {
     display: flex;
     align-items: center;
     letter-spacing: -0.01em;
-    color: #000000;
-
+    color: #000;
   }
 
   .bar {
     width: 20px;
     border: 1.42315px solid #d9d9d9;
   }
-  .abtPage{
-    margin-top:-300px;
+
+  .abtPage {
+    margin-top: -300px;
   }
-  #indexfoot{
+
+  #indexfoot {
     height: 245px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
   }
-  .adpart{
+
+  .adpart {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  .footImg{
-   margin-left: 20%;
+
+  .footImg {
+    margin-left: 20%;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  
-.topHead, .abtPage, .desLink{
+  .topHead,
+  .abtPage,
+  .desLink {
     display: none;
-    }
+  }
+
   .btn1 {
     display: flex;
   }
@@ -676,14 +659,15 @@ h1 span {
     margin: auto;
     margin-top: -190px;
   }
-.phtxt{
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 17px;
-  line-height: 27px;
 
-}
+  .phtxt {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 27px;
+  }
+
   .st {
     box-sizing: border-box;
     width: 100%;
@@ -824,7 +808,6 @@ h1 span {
     width: 70%;
     height: 68px;
     border: none;
-    
     background: #ff4f38;
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -844,7 +827,7 @@ h1 span {
     gap: 10px;
     width: 100%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   .fsp {
@@ -861,7 +844,6 @@ h1 span {
     letter-spacing: -0.05em;
     color: #000;
     margin-top: 15px;
-
   }
 
   .fsContainer {
@@ -935,8 +917,6 @@ h1 span {
     border-radius: 4px;
     margin-top: 27px;
   }
-
-
 
   .fstHalf {
     display: flex;
