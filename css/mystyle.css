@@ -5,6 +5,10 @@ body {
   height: 0;
 }
 
+.navActive {
+  color: #f07f7e;
+}
+
 h1 {
   color: hsl(0, 0%, 28%);
   font-size: 50px;
