@@ -1,4 +1,6 @@
 const continer = document.getElementById('fscont');
+const divstic = document.getElementById('divstic');
+const divdynmic = document.getElementById('divdynmic');
 const feSpeaker = [
   {
     id: 1,
@@ -34,11 +36,11 @@ const dynobj = [
 
 window.onload = () => {
   feSpeaker.forEach((project) => {
-    continer.innerHTML += `<div class="row mt-4 dyn">
-     <div class="col-4 ">
+    divstic.innerHTML += `<div class="row mt-4  dyn">
+     <div class="col-5 col-md-4">
        <img  src="${project.img}" alt="speaker img not found" width="107px" height="106.4px">
      </div>
-     <div class="col-8  fpRows">
+     <div class="col-7  col-md-8 fpRows">
          <div class="row fsH">${project.title}</div>
          <div class="row fsH2">${project.heading}</div>
          <span class="bar"></span>
@@ -47,22 +49,41 @@ window.onload = () => {
    </div>
    `;
   });
+  if (window.screen.width > 767) {
+       expand();
+  }
   continer.innerHTML += '<button onclick="expand()" class="btn  dropdown-toggle btn-down" type="button" id="dropdownMenuButton" data-toggle="dropdown" >More</button>';
 };
 function dynamicObj() {
   dynobj.forEach((project) => {
-    continer.innerHTML += `<div class="row mt-4 dyn">
-        <div class="col-4 ">
+   if (window.screen.width < 768) {
+    continer.innerHTML += `<div class="row mt-4 dyn2">
+        <div class="col-4 col-md-4">
           <img  src="${project.img}" alt="speaker img not found" width="107px" height="106.4px">
         </div>
-        <div class="col-8  fpRows">
+        <div class="col-8 col-md-8  fpRows">
             <div class="row fsH">${project.title}</div>
             <div class="row fsH2">${project.heading}</div>
             <span class="bar"></span>
             <div class="row fsH3">${project.subheading}</div>
         </div>
-      </div>
-      `;
+      </div>`;
+    }
+
+    else {
+      divdynmic.innerHTML += `<div class="row mt-4 dyn2">
+        <div class="col-4 col-md-4">
+          <img  src="${project.img}" alt="speaker img not found" width="107px" height="106.4px">
+        </div>
+        <div class="col-8 col-md-8  fpRows">
+            <div class="row fsH">${project.title}</div>
+            <div class="row fsH2">${project.heading}</div>
+            <span class="bar"></span>
+            <div class="row fsH3">${project.subheading}</div>
+        </div>
+      </div>`;
+    }
+
   });
 }
 
@@ -71,6 +92,4 @@ function expand() {
   dynamicObj();
   document.getElementById('dropdownMenuButton').style.display = 'none';
 }
-if (0) {
-  expand();
-}
+ 
