@@ -6,7 +6,7 @@ const feSpeaker = [
   {
     id: 1,
     title: 'Yochai Brnklrt',
-    img: '../images/aboutimg.png',
+    img: '../images/prog1.png',
     heading: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
     subheading: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
   },
