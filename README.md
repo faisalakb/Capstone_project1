@@ -169,7 +169,9 @@ Feel free to check the [issues page](https://github.com/faisalakb/Capstone_proje
 
 <!-- ACKNOWLEDGEMENTS -->
 
+## 🙏 Acknowledgments <a href="https://www.behance.net/adagio07" name="acknowledgements">Cindy Shin</a>
 
+I give my gratitude towards Microverse team, GitHub and special thank to Cindy shin the author of the original design and my coding partners who help me towards the completion of this task.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
