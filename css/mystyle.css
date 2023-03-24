@@ -41,7 +41,8 @@ h1:hover span:nth-child(2) {
 
 @media only screen and (min-width: 768px) {
   .mainb,
-  .desLink, .abtFooterImg {
+  .desLink,
+  .abtFooterImg {
     display: none;
   }
 
@@ -93,10 +94,12 @@ h1:hover span:nth-child(2) {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
   }
-  .abtbgimg{
-    background: #F7F7F8;
+
+  .abtbgimg {
+    background: #f7f7f8;
   }
-  .abIndImg{
+
+  .abIndImg {
     position: absolute;
     margin-top: -10%;
   }
@@ -409,14 +412,14 @@ h1:hover span:nth-child(2) {
     background: #fff;
     z-index: 1;
   }
-.personinfo{
-  position: absolute;
-  margin-top: 20%;
-  z-index: 1;
-}
+
+  .personinfo {
+    position: absolute;
+    margin-top: 20%;
+    z-index: 1;
+  }
 
   .abtxt2 {
-   
     width: 100%;
     height: 100px;
     font-family: 'Lato', sans-serif;
@@ -429,8 +432,6 @@ h1:hover span:nth-child(2) {
     text-align: center;
     justify-content: center;
     color: #7a7a7a;
-
-  
   }
 
   .abtxt3 {
@@ -660,7 +661,9 @@ h1:hover span:nth-child(2) {
 @media only screen and (max-width: 767px) {
   .topHead,
   .abtPage,
-  .desLink, .abtFooterImgD, .abIndImg {
+  .desLink,
+  .abtFooterImgD,
+  .abIndImg {
     display: none;
   }
 
@@ -1161,7 +1164,8 @@ h1:hover span:nth-child(2) {
     width: 20px;
     border: 1.42315px solid #d9d9d9;
   }
-  .abtFooterImg{
+
+  .abtFooterImg {
     margin-left: 5%;
   }
 }
